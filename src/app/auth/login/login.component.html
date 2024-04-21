@@ -1,0 +1,77 @@
+<div
+  class="flex justify-center items-center min-h-screen bg-[url('https://etap.com/images/default-source/product/distribution-state-estimation/distribution-state-estimation-1.jpg?sfvrsn=557fb07f_30')] bg-cover bg-gradient-to-r from-black/60 to-black/30"
+>
+  <div class="w-full max-w-lg bg-white shadow-lg rounded-lg p-8 relative">
+    <!-- Main Form Header -->
+    <h2
+      class="text-center text-3xl font-bold text-gray-800 mb-6"
+    >
+      Login
+    </h2>
+    <p class="text-center text-gray-600 text-sm mb-6">
+      Please enter your credentials to access the distribution management system.
+    </p>
+
+    <!-- Login Form -->
+    <form (submit)="onSubmit()" class="space-y-6">
+      <div class="space-y-2">
+        <label for="username" class="block text-sm font-medium text-gray-700"
+          >Username</label
+        >
+        <div class="relative">
+          <input
+            id="username"
+            [(ngModel)]="username"
+            name="username"
+            type="text"
+            required
+            placeholder="Enter your username"
+            class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
+          />
+          <i class="fa fa-user absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <label for="password" class="block text-sm font-medium text-gray-700"
+          >Password</label
+        >
+        <div class="relative">
+          <input
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            type="password"
+            required
+            placeholder="Enter your password"
+            class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all duration-300"
+          />
+          <i class="fa fa-lock absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center mt-6">
+        <button
+          type="submit"
+          class="w-full py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 active:scale-95 transition-all duration-300 transform"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+
+    <!-- Support and Additional Information -->
+    <div class="text-center text-gray-600 text-sm mt-6">
+      <span
+        >Need help? Contact our support team at
+        <a
+          href="mailto:support@example.com"
+          class="text-teal-600 underline hover:text-teal-700"
+        >
+          support@example.com
+        </a
+      >.</span>
+    </div>
+  </div>
+</div>
